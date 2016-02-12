@@ -1,0 +1,25 @@
+{
+  "name": "silvamfilipe/guitar_tools",
+  "description": "Guitar related tools to used with PHP ",
+  "minimum-stability": "dev",
+  "license": "MIt",
+  "authors": [
+    {
+      "name": "Filipe Silva",
+      "email": "silvam.filipe@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "SilvamFilipe\\GuitarTools\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SilvamFilipe\\GuitarTools\\Tests\\": "tests"
+    }
+  }
+}

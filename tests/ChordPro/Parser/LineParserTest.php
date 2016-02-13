@@ -7,9 +7,10 @@
  * file that was distributed with this source code.
  */
 
-namespace SilvamFilipe\GuitarTools\Tests;
+namespace SilvamFilipe\GuitarTools\Tests\ChordPro\Parser;
 
-use SilvamFilipe\GuitarTools\LineParser;
+use SilvamFilipe\GuitarTools\ChordPro\Parser\LineParser;
+
 
 /**
  * Line Parser Test case
@@ -36,9 +37,8 @@ class LineParserTest extends \PHPUnit_Framework_TestCase
 
     public function testParser()
     {
-        $input = 'Swing [D]low, sweet [G]chari[D]ot,';
-        $output = "     D          G    D\nSwing low, sweet chariot,";
+        $input = 'Swing [Dmaj]low, sweet [G]chari[D]ot,';
+        $output = "     Dmaj       G    D\nSwing low, sweet chariot,";
         $this->assertEquals($output, $this->parser->parse($input));
-
     }
 }
